@@ -12,8 +12,5 @@ Projeto simples para criação de contas de usuário utilizando **HTML**, **CSS*
 - CSS3
 - JavaScript
 
-## 🔗 Link para o projeto
-Em breve disponível no [GitHub Pages](https://savioo-dev.github.io/criar-conta/).
-
 ## 🧑‍💻 Autor
 **Antony Sebastião** - [@savioo.dev](https://www.instagram.com/savioo.dev/)

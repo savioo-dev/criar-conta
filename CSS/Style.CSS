@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Roboto Mono", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    background: linear-gradient(180deg, #a8a8a8 0%, rgb(48, 79, 79) 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 900px;
+    width: 90%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0,0,0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url("../img/bg-form.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-layer {
+    background-color: rgba(88, 110, 110, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#register-banner h1 {
+    font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+    margin-bottom: 1.5rem;
+    color: #f5f5f5;
+    animation: fadeInSlide 1s ease-out forwards;
+    word-spacing: 50rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#register-form {
+    background-color: #fdfdfd;
+    padding: 3rem 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    width: 100%;
+}
+
+#register-form > p {
+    text-align: center;
+    margin: 0 auto 2rem;
+    color: #AAA;
+    font-size: 0.9rem;
+    width: 100%;
+    display: block;
+}
+
+#register-form > p > span {
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #AAA;
+    padding: 0.8rem 0;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0077cc;
+}
+
+@media (max-width: 768px) {
+    #register-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    #register-banner, #register-form {
+        width: 100%;
+    }
+    
+    .form-control, input[type="submit"] {
+        width: 90%;
+    }
+    
+    #register-banner h1 {
+        word-spacing: 20rem;
+        padding-left: 0.5rem;
+    }
+}
